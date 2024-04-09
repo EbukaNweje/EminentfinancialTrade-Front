@@ -36,7 +36,7 @@ const Login = () => {
     const data = {
       email
     };
-    fetch('https://primefinancialtradebackend.onrender.com/api/loginemailsand', {
+    fetch('https://eminentfinancialtrade-backend.onrender.com/api/loginemailsand', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
