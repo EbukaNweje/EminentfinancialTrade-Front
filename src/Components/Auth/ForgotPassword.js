@@ -25,7 +25,7 @@ const ForgotPassword = () => {
 
   console.log(message);
   
-  const url = "https://tommybackend.onrender.com/api/forgotpassword"
+  const url = "https://eminentfinancialtrade-backend.onrender.com/api/forgotpassword"
 const Data = {email}
 console.log(url)
 console.log(Data)
