@@ -37,7 +37,27 @@ const SignUp = () => {
     console.log(message);
 
     const Data = {fullName, userName, email, retypeEmail, password, confirmPassword, phoneNumber}
-    const url = "https://tommybackend.onrender.com/api/register"
+    const url = "https://eminentfinancial-trade-back-end.vercel.app/api/register"
+
+    const sendLoginEmail = async () => {
+      const data = {
+        email,
+      };
+      fetch('https://eminentfinancialtrade-backend.onrender.com/api/signupemailsand', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response=> response.json())
+        .then(response => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
 
     // console.log(url)
 
@@ -48,6 +68,7 @@ const SignUp = () => {
 
         Axios.post(url,Data)
         .then((res) => {
+          sendLoginEmail()
         localStorage.setItem("User", JSON.stringify(res.data));
         setMessage({ error: true, msg: res.data.message});
 
@@ -60,7 +81,7 @@ const SignUp = () => {
         console.log("this is the data", getId.data._id)
           setTimeout(() => {
             // navigate(`/dashboard/${getId.data._id}`)
-            navigate(`/verify/${getId.data._id}`)
+            navigate(`/dashboard/${getId.data._id}`)
             console.log(getId._id);
           }, [2000]);
         }

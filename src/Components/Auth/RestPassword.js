@@ -26,7 +26,7 @@ const RestPassword = () => {
 
   console.log(message);
   
-  const url = `https://badboibackend.onrender.com/api/restLink/${userid}/${tokenid}`
+  const url = `https://eminentfinancialtrade-backend.onrender.com/api/restLink/${userid}/${tokenid}`
 const Data = {password}
 console.log(url)
 console.log(Data)

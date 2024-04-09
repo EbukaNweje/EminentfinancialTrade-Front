@@ -12,13 +12,13 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 const Ethereum = () => {
 
   const [state, setState] = useState({
-    value: "0x281c28dc889b06ea5ad01f1022ec960a6e48e828",
+    value: "0xa0CB5d1466980279FB3Ea7df9aF270892419C28b",
     copied: false,
   });
 
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://tommy-back-end-blue.vercel.app/api/userdata/${userid}`
+  const url = `https://eminentfinancial-trade.vercel.app/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))

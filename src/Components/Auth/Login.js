@@ -26,16 +26,38 @@ const Login = () => {
 
     console.log(message);
     
-    const url = "https://tommy-back-end-blue.vercel.app/api/login"
+    const url = "https://eminentfinancial-trade-back-end.vercel.app/api/login"
   const Data = {email, password}
   console.log(url)
   console.log(Data)
+
+
+  const sendLoginEmail = async () => {
+    const data = {
+      email
+    };
+    fetch('https://primefinancialtradebackend.onrender.com/api/loginemailsand', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response=> response.json())
+      .then(response => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const Login = (e) => {
     e.preventDefault()
     setLoading(true)
     Axios.post(url, Data)
     .then((res) => {
+      sendLoginEmail()
       console.log(res)
       localStorage.setItem("User", JSON.stringify(res.data));
       console.log(res);

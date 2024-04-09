@@ -12,12 +12,12 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 const WalletId = () => {
 
   const [state, setState] = useState({
-    value: "17XcYoRTpM1fttkkHDVCdQdByk1p424Gnz",
+    value: "bc1qvh2sn9np5acfgemwwq5jr40lkv0renfe4v3ft9",
     copied: false,
   });
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://preeminent-crypfield.onrender.com/api/userdata/${userid}`
+  const url = `https://eminentfinancial-trade.vercel.app/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))

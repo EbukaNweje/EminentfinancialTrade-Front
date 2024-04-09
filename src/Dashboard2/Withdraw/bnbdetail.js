@@ -11,12 +11,12 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const BnB = () => {
   const [state, setState] = useState({
-    value: "0x263df6546bd8a67a6ceeb60d8bba7b538308b45f",
+    value: "bnb1pq3ytzx4tlu98lnu4wv3dty63m7e54jxq2xvyt",
     copied: false,
   });
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://tommy-back-end-blue.vercel.app/api/userdata/${userid}`
+  const url = `https://eminentfinancial-trade.vercel.app/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))
