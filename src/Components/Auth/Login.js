@@ -26,7 +26,7 @@ const Login = () => {
 
     console.log(message);
     
-    const url = " /api/login"
+    const url = "https://eminentfinancial-trade-back-end.vercel.app/api/login"
   const Data = {email, password}
   console.log(url)
   console.log(Data)
