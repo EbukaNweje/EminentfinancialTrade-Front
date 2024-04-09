@@ -47,9 +47,9 @@ const Footer = () => {
             <Col3>
             <span style={{fontWeight: "bold", fontSize: "20px", marginBottom: "10px", color: "#E5AC44"}}>Contact Information</span>
                 <a href="/support">FAQ's</a>
-                <div>preeminent crypfield<br/>@gmail.com</div>
+                <div>eminentfinancialtrade<br/>@gmail.com</div>
                 <br/>
-                <a href="/support">preeminent crypfield.com</a>
+                <a href="/support">eminentfinancial-trade.vercel.app</a>
                 <a href="/faqdet">Reports</a>
             </Col3>
         </Line3>

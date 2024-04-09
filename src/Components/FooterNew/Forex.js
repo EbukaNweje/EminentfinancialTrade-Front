@@ -28,7 +28,7 @@ const Forex = () =>{
 
                 <br/>
                 <br/>
-                WHY PREMIUM-CRYPTASSETS?
+                WHY EminentfinancialTrade?
                 <br/>
                 We trade profitably, the most popular pairs like the EUR/USD, followed by the USD/JPY, GBP/USD and USD/CHF pairs respectively. There are a few other currencies that deserve to be mentioned. Informally known as the ‘commodity pairs’, the AUD/USD or ‘Aussie’, USD/CAD and NZD/USD are all frequently traded currency pairs. Unsurprisingly, this group of currencies derives its nickname from the fact that they come from countries that possess large quantities of natural resources.
                 <br/>
