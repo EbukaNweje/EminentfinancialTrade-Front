@@ -9,7 +9,7 @@ const UpdateWallet = ({Display}) => {
   const [last, setLast] = useState("")
   console.log(setLast);
 
-    const url = `https://eminentfinancial-trade.vercel.app/api/alluserdata`
+    const url = "https://eminentfinancial-trade-back-end.vercel.app/api/alluserdata"
   
     useEffect(()=>{
       Axios.get(url)
@@ -54,7 +54,7 @@ const UpdateWallet = ({Display}) => {
           console.log(myObject)
           
           
-         const lastDepositupdate = `https://eminentfinancial-trade.vercel.app/api/${UpdateValues}/${id}`
+         const lastDepositupdate = `https://eminentfinancial-trade-back-end.vercel.app/api/${UpdateValues}/${id}`
          Axios.patch(lastDepositupdate, myObject)
           .then(res => console.log(res))
            console.log("this is the id", id) 
@@ -64,7 +64,7 @@ const UpdateWallet = ({Display}) => {
       }
 
       const deleteprofile = (id) => {
-        const url = `https://eminentfinancial-trade.vercel.app/api/userdata/${id}`
+        const url = `https://eminentfinancial-trade-back-end.vercel.app/api/userdata/${id}`
         Axios.delete(url)
         .then(res => {
           console.log(res)
